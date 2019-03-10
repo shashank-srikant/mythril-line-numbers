@@ -1,6 +1,8 @@
 ## What?
 A driver file to repoduce https://github.com/ConsenSys/truffle-security/issues/102
 
+Truffle project to reproduce https://github.com/ConsenSys/mythx-developer-support/issues/16
+
 ## Folder structure
 - `call_mythxapi.js`: Script to call the function `byteOffset2lineColumn()` from `truffle-security/lib/issues2eslint.js`
 - `data/`: contains relevant data to pass to `byteOffset2lineColumn()`
@@ -10,6 +12,12 @@ A driver file to repoduce https://github.com/ConsenSys/truffle-security/issues/1
 ```
 npm install
 node call_mythxapi.js
+```
+
+To run truffle project, 
+```
+npm install
+./node_modules/.bin/truffle run verify
 ```
 
 ## Input srcMap being supplied via `call_mythxapi.js`
