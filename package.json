@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "truffle": "^5.0.7",
     "truffle-security": "^1.1.0"
   },
   "eslintConfig": {
