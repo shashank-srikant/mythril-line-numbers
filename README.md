@@ -12,6 +12,19 @@ npm install
 node call_mythxapi.js
 ```
 
+## Input srcMap being supplied via `call_mythxapi.js`
+`[ '2456:1:0', '2432:1:0', '2419:1:0' ]`
+
+## Expected output
+```
+[ { line: 77, column: 103 }, { line: 77, column: 104 } ]
+--
+[ { line: 77, column: 79 }, { line: 77, column: 80 } ]
+--
+[ { line: -1, column: 0 }, {} ]
+--
+```
+
 ## How to generate files present in `data/`
 - Solidity source
 
