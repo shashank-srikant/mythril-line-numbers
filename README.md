@@ -15,7 +15,7 @@ node call_mythxapi.js
 ## Input srcMap being supplied via `call_mythxapi.js`
 `[ '2456:1:0', '2432:1:0', '2419:1:0' ]`
 
-## Output for the supplied input
+##  `call_mythxapi.js` output for the supplied input
 ```
 [ { line: 77, column: 103 }, { line: 77, column: 104 } ]
 --
