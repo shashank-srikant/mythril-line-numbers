@@ -23,15 +23,15 @@ Source picked from https://etherscan.io/address/0xf6da07a8ffb5683314715d8c7a1a5c
 
 `{contractname}: StandardToken`
 
-- AST (`data/{filename}.ast`)
+- AST (`data/{filename}.sol.ast`)
 
 `solc --ast-compact-json data/{filename}.sol > data/{filename}.sol.ast`
 
-- Byte code (`data/{filename}.byte`)
+- Byte code (`data/{filename}.sol.byte`)
 
 `solc --combined-json bin data/{filename}.sol > data/{filename}.sol.byte`
 
-- Mythril error report (`data/{filename}.json`)
+- Mythril error report (`data/{filename}.sol:{contractname}.json`)
 
 `myth -xo jsonv2 data/{filename}.sol:{contractname} > data/{filename}.sol:{contractname}.json`
 
