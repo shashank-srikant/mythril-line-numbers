@@ -59,9 +59,10 @@ var i;
 for(i=0; i < err_content.length; i++){
     sourcemaps_list.push(err_content[i]['locations'][0]['sourceMap']);
 }
+console.log(sourcemaps_list);
 
 for(i=0; i < sourcemaps_list.length; i++){
-    bytecode = {
+    myth_data = {
         "contractName": 'dummy',
         "bytecode": 'asd',//byte_code,
         "sourceMap": 'asd',//sourcemaps_list[i],
@@ -76,7 +77,7 @@ for(i=0; i < sourcemaps_list.length; i++){
         "ast": ast_obj
     };
 
-    const issuesObject = new myth_fn(bytecode);
+    const issuesObject = new myth_fn(myth_data);
     console.log(issuesObject.byteOffset2lineColumn(sourcemaps_list[i].split(":")[0],
                                                    issuesObject.lineBreakPositions[src_name])
                 );
