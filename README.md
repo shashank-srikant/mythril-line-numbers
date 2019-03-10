@@ -33,7 +33,7 @@ Source picked from https://etherscan.io/address/0xf6da07a8ffb5683314715d8c7a1a5c
 
 - Mythril error report (`data/{filename}.json`)
 
-`myth -xo jsonv2 data/{filename}.sol > data/{filename}.sol.json`
+`myth -xo jsonv2 data/{filename}.sol:StandardToken > data/{filename}.sol.json`
 
 ## JSON formatting
 I use http://jsonviewer.stack.hu/ to view formatted JSON files.
