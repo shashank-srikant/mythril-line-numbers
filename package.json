@@ -1,0 +1,11 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "truffle-security": "^1.1.0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  }
+}
