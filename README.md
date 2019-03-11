@@ -4,6 +4,7 @@ A driver file to repoduce https://github.com/ConsenSys/truffle-security/issues/1
 Truffle project to reproduce https://github.com/ConsenSys/mythx-developer-support/issues/16
 
 ## Folder structure
+- `call_mythxapi.js`: Script to call the function `sourceMappingDecoder().converOffsetToLineColumn()`
 - `call_mythxapi.js`: Script to call the function `byteOffset2lineColumn()` from `truffle-security/lib/issues2eslint.js`
 - `data/`: contains relevant data to pass to `byteOffset2lineColumn()`
 
@@ -11,16 +12,10 @@ Truffle project to reproduce https://github.com/ConsenSys/mythx-developer-suppor
 ## Run file
 ```
 npm install
-node call_mythxapi.js
+node call_remixlib.js
 ```
 
-To run truffle project, 
-```
-npm install
-./node_modules/.bin/truffle run verify
-```
-
-## Input srcMap being supplied via `call_mythxapi.js`
+## Input srcMap being supplied via `call_remixlib.js`
 `[ '2456:1:0', '2432:1:0', '2419:1:0' ]`
 
 ##  `call_mythxapi.js` output for the supplied input
@@ -29,7 +24,7 @@ npm install
 --
 [ { line: 77, column: 79 }, { line: 77, column: 80 } ]
 --
-[ { line: -1, column: 0 }, {} ]
+[ { line: 77, column: 66 }, { line: 77, column: 67 } ]
 --
 ```
 
