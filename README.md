@@ -18,7 +18,7 @@ node call_remixlib.js
 ## Input srcMap being supplied via `call_remixlib.js`
 `[ '2456:1:0', '2432:1:0', '2419:1:0' ]`
 
-##  `call_mythxapi.js` output for the supplied input
+##  `call_remixlib.js` output for the supplied input
 ```
 [ { line: 77, column: 103 }, { line: 77, column: 104 } ]
 --
